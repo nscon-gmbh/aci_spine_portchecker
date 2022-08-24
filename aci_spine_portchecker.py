@@ -33,7 +33,7 @@ def get_token(baseurl,user,passw):
         token = response['imdata'][0]['aaaLogin']['attributes']['token']
         return token
     except:
-        print("Failed to get authorization token from: " + host)
+        print("Failed to get authorization token from: " + baseurl)
 
 
 
@@ -46,14 +46,14 @@ def get_devices(baseurl,token):
     headers = {
         "Cookie" : f"APIC-Cookie={token}"
     }
-    
+
     try:
         # send request and return response
         requests.packages.urllib3.disable_warnings()
         response = requests.get(url, headers=headers, verify=False)
         return response
     except:
-        print("Failed to get devices from " + host)
+        print("Failed to get devices from " + baseurl)
 
 
 
