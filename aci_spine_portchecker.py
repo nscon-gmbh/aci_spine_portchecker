@@ -1,7 +1,7 @@
 # import modules
 import requests
 import json
-import sys
+import os
 
 
 def get_token(baseurl,user,passw):
@@ -76,9 +76,9 @@ def get_interface_status(baseurl,token):
 
 def main():
     # define variables from args
-    host = sys.argv[1]
-    user = sys.argv[2]
-    passw = sys.argv[3]
+    host = os.environ.get("ACI_URL") or input('\nEnter ACI url: ')
+    user = os.environ.get("ACI_USER") or input('\nEnter ACI username: ')
+    passw = os.environ.get("ACI_PASS") or input('\nEnter ACI password: ')
 
     # define dictionarys for checks
     device_dict = {}
