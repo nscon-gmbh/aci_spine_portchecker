@@ -7,7 +7,7 @@ import sys
 def get_token(baseurl,user,passw):
 
     # build url
-    url = baseurl + 'api/aaaLogin.json';
+    url = baseurl + 'api/aaaLogin.json'
 
     # define payload
     payload = {
@@ -40,7 +40,7 @@ def get_token(baseurl,user,passw):
 def get_devices(baseurl,token):
 
     # build url
-    url = baseurl + 'api/node/class/fabricNode.json';
+    url = baseurl + 'api/node/class/fabricNode.json'
 
     # define header
     headers = {
@@ -60,7 +60,7 @@ def get_devices(baseurl,token):
 def get_interface_status(baseurl,token):
 
     # build url
-    url = baseurl + 'api/node/class/l1PhysIf.json';
+    url = baseurl + 'api/node/class/l1PhysIf.json'
 
     # define header
     headers = {
