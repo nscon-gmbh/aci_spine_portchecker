@@ -126,7 +126,7 @@ def main():
             name = device_dict.get(check_dn)
 
             # print device name, interface and status if interface is not up
-            if status != "up":
+            if status != "down":
                 print(name + "  |  " + interface_id + "  |  " + status)
 
 if __name__ == "__main__":
