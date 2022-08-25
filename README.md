@@ -16,12 +16,32 @@ If the code is configurable, describe it in detail, either here or in other docu
 
 ## Usage
 
-Show users how to use the code. Be specific.
-Use appropriate formatting when showing code snippets or command line output.
+```bash
+(venv) $ python aci_spine_portchecker.py
+
+Enter ACI url: https://10.10.20.14/
+
+Enter ACI username: admin
+
+Enter ACI password: C1sco12345
+
+Host: https://10.10.20.14/
+
+Device  |  Interface  |  Status
+spine-1  |  eth14/32  |  up
+spine-1  |  eth14/3  |  up
+spine-1  |  eth17/30  |  up
+spine-1  |  eth14/7  |  up
+spine-1  |  eth9/3  |  up
+spine-1  |  eth9/13  |  up
+spine-1  |  eth14/5  |  up
+spine-1  |  eth14/29  |  up
+<output omitted>
+```
 
 ### DevNet Sandbox
 
-A great way to make your repo easy for others to use is to provide a link to a [DevNet Sandbox](https://developer.cisco.com/site/sandbox/) that provides a network or other resources required to use this code. In addition to identifying an appropriate sandbox, be sure to provide instructions and any configuration necessary to run your code with the sandbox.
+Tested with [Cisco ACI Multi-Site Orchestrator](https://devnetsandbox.cisco.com/RM/Diagram/Index/94913e15-002f-4b2a-b241-8eeed50ebbf8) reservable sandbox.
 
 ## How to test the software
 
