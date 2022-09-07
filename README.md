@@ -4,12 +4,12 @@ Check portstatus of aci spines
  
 ## Use Case Description
 
-The code is used to check the port status of all spine switches in an cisco application centric infrastructure via api.
+The code is used to check the port status of all spine switches in an cisco application centric infrastructure via api. 
 The code is used for a one time live check.
 
 ## Installation
 
-You need to install python3.8 or higher to run the code
+You need to install python3.8 or higher to run the code. 
 You need to install the following modules:
 - requests
 - json
@@ -17,7 +17,7 @@ You need to install the following modules:
 
 ## Configuration
 
-You can define enviroment variables (ACI_URL, ACI_USER, ACI_PASS) or enter the parameters initial at the start of the script.
+You can define enviroment variables (ACI_URL, ACI_USER, ACI_PASS) or enter the parameters initial at the start of the script. 
 For multiple use, we recommand to configure enviroment variables.
 
 ## Usage
@@ -55,7 +55,7 @@ Last tested un August 2022.
 
 ## Known issues
 
-some json format issus when login or data gathering fails. It will be fixed in the future
+Some json format issus when login or data gathering fails will be fixed in the future.
 
 ## Getting help
 
